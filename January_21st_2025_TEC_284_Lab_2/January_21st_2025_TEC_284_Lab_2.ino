@@ -29,7 +29,7 @@ void setup() {
    int timesToBlink = 1;
   timesToBlink = timesToBlink + 2 * 4;
   
-  for (int i = 0; i < timesToBlink;i++) {
+  while (timesToBlink > 0 ) {
 
     pinMode(LED_BUILTIN,OUTPUT);
     digitalWrite(LED_BUILTIN, HIGH);
@@ -38,7 +38,7 @@ void setup() {
     delay(1000);
 
   } 
-
+  digitalWrite(LED_BUILTIN, HIGH);
 
 }
 
